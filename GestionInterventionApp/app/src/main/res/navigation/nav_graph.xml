@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SingupFragment">
+
+    <fragment
+        android:id="@+id/SingupFragment"
+        android:name="com.example.gestionintervention.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.gestionintervention.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_InterventionsFragment"
+            app:destination="@id/InterventionFrag" />
+        <action  android:id="@+id/LoginFragment"
+            app:destination="@id/LoginFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/InterventionFrag"
+        android:name="com.example.gestionintervention.InterventionsFragment"
+        android:label="@string/titleIntervention"
+        tools:layout="@layout/fragment_interventions">
+
+
+        <action
+            android:id="@+id/action_InterventionFrag_self"
+            app:destination="@id/InterventionFrag" />
+        <action
+            android:id="@+id/action_InterventionFrag_to_userInteventionsFragment"
+            app:destination="@id/userInteventionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInteventionsFragment"
+        android:name="com.example.gestionintervention.UserInteventionsFragment"
+        android:label="UserInteventionsFragment" >
+        <action
+            android:id="@+id/action_userInteventionsFragment_to_InterventionFrag"
+            app:destination="@id/InterventionFrag" />
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_name">Gestion des interventions</string>
+    <string name="action_logout">Se Déconnecter</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="RegesterUser">Enregistrer Un Utilisateur</string>
+    <string name="login">Login</string>
+    <string name="LinkToLogin">Déjà inscrit? \n Cliquer ici pour s\'identifier
+    </string>
+    <string name="errorMessageLogin"></string>
+    <string name="companyDesc">LEADER EN GEOLOCALISATION ...</string>
+    <string name="usernameText">Entrer votre nom d\'utilisateur</string>
+    <string name="passwordText">Entrer votre mot de passe</string>
+    <string name="emailText">Entrer votre email</string>
+    <string name="hello_first_fragment">Hello World</string>
+    <string name="logoDesc">Logo of company</string>
+    <string name="loginFailedMsg">Nom d\'utilisateur ou mot de passe incorrect !!</string>
+    <string name="titleIntervention">Ajoutez une intervention</string>
+    <string name="psn">PSN</string>
+    <string name="lvcan">LVCAN</string>
+    <string name="matricule">Matricule</string>
+    <string name="sim">SIM</string>
+    <string name="technicien">Nom du Technicien</string>
+    <string name="getLocation">Get location</string>
+    <string name="insertData">Insérer des données </string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="myinterventions">Mes Interventions</string>
+</resources>

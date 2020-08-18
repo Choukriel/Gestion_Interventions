@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_app"
+        tools:context="com.example.gestionintervention.FirstFragment">
+
+    <ImageView
+        android:id="@+id/geo4netLogo"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="35dp"
+        android:contentDescription="@string/logoDesc"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/compDesc"
+        app:srcCompat="@drawable/geo4net_small" />
+
+    <TextView
+        android:id="@+id/compDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:gravity="center"
+        android:text="@string/companyDesc"
+        android:textColor="@color/colorcompDesc"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newUserForum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geo4netLogo" />
+
+    <LinearLayout
+        android:id="@+id/newUserForum"
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compDesc"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/usernameText"
+            android:inputType="textPersonName"
+            android:textColorHighlight="#BE4CAF50"
+            android:textColorLink="#BE4CAF50" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/passwordText"
+            android:inputType="textPassword"
+            android:textColorHighlight="#BE4CAF50"
+            android:textColorLink="#BE4CAF50" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/emailText"
+            android:inputType="textEmailAddress"
+            android:textColorHighlight="#BE4CAF50"
+            android:textColorLink="#BE4CAF50" />
+
+        <Button
+            android:id="@+id/regesterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RegesterUser" />
+
+        <TextView
+            android:id="@+id/linkToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/LinkToLogin"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regesterError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:textColor="@color/Warnings"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/newUserForum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compDesc"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
