@@ -22,7 +22,7 @@ public class Intervention {
 	 @Column(name = "lvcan")
 	 private String lvcan;
 	
-	 @Column(name = "current_ocation")
+	 @Column(name = "current_location")
 	 private String currLoc;
 	 
 	 @Column(name = "matricule")
